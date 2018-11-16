@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/jpg" href="imagenes/copam.jpg" />
+    <title>FutGol 24/7</title>
+
+<style media="screen">
+  h4{
+    color:rgb(190, 200, 200) ;
+  }
+
+</style>
+
+  </head>
+  <body>
+
+    <!-- <div>
+      <img class="logo" src="imagenes/festejomessi.jpg" alt="Messi Levantando Su Camiseta" height="60px">
+    </div> -->
+
+<h1>FutGol 24/7</h1>
+<!-- <img src="imagenes/futgol.jpeg" alt=""> -->
+<ul>
+  <li><a href="index.html">HOME</a></li>
+  <li><a href="mundial.html">MUNDIAL 2018</a></li>
+  <li><a href="champions.html">CHAMPIONS</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">LIGAS</a>
+    <div class="dropdown-content">
+      <a class="Ligas" href="bbva.html">BBVA</a>
+      <a class="Ligas" href="calcioa.html">SERIE A</a>
+      <a class="Ligas" href="premier.html">PREMIER</a>
+      <a class="Ligas" href="superliga.html">SUPER LIGA ARG</a>
+    </div>
+  <li><a  target="_blank" href="contacto.html">CONTACTANOS</a></li>
+  </li>
+</ul>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="imagenes/campeones2018.jpg" style="width:100%" height="400px">
+</div>
+
+<div class="mySlides fade">
+  <img src="imagenes/maradona1986.jpg" style="width:100%" height="400px">
+</div>
+
+<div class="mySlides fade">
+  <img src="imagenes/messifestejando2.jpg" style="width:100%" height="400px">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+</script>
+
+<h4>Futgol24/7 es una pagina que creamos para mantenerte al tanto de todos tus campeonatos y
+  ligas favoritas. Estaremos siempre al tanto de sus comentarios y esperamos ir mejorando la
+  pagina a medida que avance el tiempo. Si quieren comentarnos algo pueden ir a el sector
+  contactanos arriba a la derecha de la pagina o pueden escribirnos a nuestros mails personales:</h4>
+  <h4 class="mail">alu.pmassalin@cardenal-newman.edu y alu.bsundblad@cardenal-newman.edu</h4>
+
+  </body>
+</html>
